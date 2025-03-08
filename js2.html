@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>JavaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            overflow: scroll;
+         
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d-flex flex-column align-items-center justify-content-center gap-1" id="first-div">
+        <img src="i2.jpg" alt="" class="pushpa" width="350px" id="image1">
+        <h1>Pushpa-2</h1>
+        <p class="m-3 fw-medium">The Rule" is a 2024 Indian Telugu-language action drama film directed by Sukumar. Serving as a sequel to "Pushpa: The Rise" (2021), it continues the story of Pushpa Raj, portrayed by Allu Arjun, a laborer-turned-red sandalwood smuggler, as he confronts escalating threats from his adversaries, including SP Bhanwar Singh Shekhawat, played by Fahadh Faasil. The film also features Rashmika Mandanna, Jagapathi Babu, Sunil, and Rao Ramesh in pivotal roles</p>
+        <button class="btn btn-dark fs-2" id="button" onclick="disappear()">Click here</button>
+    </div>
+
+    <div class="d-flex flex-column align-items-center justify-content-center gap-1 d-none" id="second-div">
+        <img src="i1.cHJkLWVtcy1hc3NldHMvbW92aWVzL2IzNTJkOWZkLWJkYmQtNDAyMC05M2ZlLTY1ZTM5MDFiNTg1YS53ZWJw" alt="" class="pushpa" width="450px" id="image2">
+        <h1>Yeh Jawaani Hai Deewani</h1>
+        <p class="m-3 fw-medium">Yeh Jawaani Hai Deewani is a 2013 Bollywood romantic drama film starring Ranbir Kapoor as Bunny and Deepika Padukone as Naina. It follows their journey of friendship, love, and self-discovery as they reunite on a trip and navigate their dreams and relationships.</p>
+    <button class="btn btn-dark fs-2" id="button" onclick="disappear()">Next</button>
+    </div>
+
+    <div class="d-flex flex-column align-items-center justify-content-center gap-2 mt-2" id="third-div">
+        <img src="salaar.jpg" alt="" class="pushpa" width="450px" id="image3">
+        <h1>Salaar</h1>
+        <p class="m-3 fw-medium">Salaar: Part 1 – Ceasefire" is a 2023 Indian Telugu-language epic action drama film directed by Prashanth Neel and produced by Vijay Kiragandur under Hombale Films. The film stars Prabhas in the titular role, alongside an ensemble cast including Prithviraj Sukumaran, Shruti Haasan, Jagapathi Babu, Bobby Simha, and Sriya Reddy</p>
+    <button class="btn btn-dark fs-2" id="button" onclick="disappear()">Watch</button>
+    </div>
+
+
+    <script>
+       function disappear(){
+               document.getElementById('first-div').classList.toggle('d-none');
+               document.getElementById('second-div').classList.toggle('d-none');
+               document.getElementById('third-div').classList.toggle('d-none');
+          
+}
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
